@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace MatrixView
 {
@@ -10,19 +11,31 @@ namespace MatrixView
             Console.ForegroundColor = ConsoleColor.Green;
 
             // Wake up text printing
-            Console.WriteLine("Wake up, Neo...");
-            Console.ReadKey();
+            Console.Write("Wake up, Neo");
+            Thread.Sleep(1000);
+            Console.Write(".");
+            Thread.Sleep(1000);
+            Console.Write(".");
+            Thread.Sleep(1000);
+            Console.Write(".");
             Console.Clear();
-            Console.WriteLine("\r\nThe Matrix has you...");
-            Console.ReadKey();
+            Thread.Sleep(2000);
+            Console.Write("\r\nThe Matrix has you");
+            Thread.Sleep(1000);
+            Console.Write(".");
+            Thread.Sleep(1000);
+            Console.Write(".");
+            Thread.Sleep(1000);
+            Console.Write(".");
             Console.Clear();
-            Console.WriteLine("\r\n\r\nFollow the White Rabbit.");
-            Console.ReadKey();
+            Thread.Sleep(2000);
+            Console.Write("\r\n\r\nFollow the White Rabbit.");
+            Thread.Sleep(2000);
             Console.Clear();
-            Console.WriteLine("\r\n\r\n\r\nKnock, knock, Neo.");
-            Console.ReadKey();
+            Console.Write("\r\n\r\n\r\nKnock, knock, Neo!");
+            Thread.Sleep(2000);
 
-            
+
 
             //Random number
             Random rand = new Random();
